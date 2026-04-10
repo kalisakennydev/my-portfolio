@@ -33,7 +33,7 @@ const ContactSection = () => {
                 </span>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <a href="mailto:john.doe@example.com" className="font-medium hover:text-primary transition-colors">john.doe@example.com</a>
+                  <a href="mailto:kalisakenny@gmail.com" className="font-medium hover:text-primary transition-colors">kalisakenny@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -42,7 +42,7 @@ const ContactSection = () => {
                 </span>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">San Francisco, CA</p>
+                  <p className="font-medium">Kigali, Rwanda</p>
                 </div>
               </div>
             </div>

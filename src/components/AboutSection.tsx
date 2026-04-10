@@ -22,10 +22,10 @@ const AboutSection = () => (
       <div className="grid lg:grid-cols-2 gap-12">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            I'm a passionate full-stack developer with over 8 years of experience building scalable, user-centric web applications. I started my journey as a junior developer in 2016 and have since worked with innovative startups and established enterprises.
+            I'm a passionate full-stack developer with over 5 years of experience building scalable, user-centric web applications. I began my journey as a developer in 2020 and have since worked on diverse projects, continuously improving my skills and delivering high-quality solutions.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            My expertise spans across modern JavaScript frameworks, cloud architecture, and creating seamless user experiences. I believe in writing clean, maintainable code and staying current with industry best practices.
+            My expertise spans modern JavaScript frameworks, backend development, and crafting seamless user experiences. I'm committed to writing clean, maintainable code and staying up to date with the latest industry trends and best practices.
           </p>
 
           <h3 className="font-heading font-bold text-lg mb-4">Tech Stack</h3>
@@ -42,7 +42,7 @@ const AboutSection = () => (
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin size={18} className="text-primary" />
-              <span>San Francisco, CA</span>
+              <span>Kigali, Rwanda</span>
             </div>
           </div>
         </motion.div>
