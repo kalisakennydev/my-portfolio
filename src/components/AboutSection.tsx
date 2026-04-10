@@ -42,7 +42,7 @@ const AboutSection = () => (
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin size={18} className="text-primary" />
-              <span>San Francisco, CA</span>
+              <span>Kigali, Rwanda</span>
             </div>
           </div>
         </motion.div>
