@@ -4,21 +4,12 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     text: "Outstanding developer with exceptional problem-solving skills. Delivered our project ahead of schedule with excellent quality.",
-    name: "Sarah Johnson",
-    role: "CEO, TechCorp",
-    initial: "S",
   },
   {
     text: "A true professional who brings creativity and technical expertise to every project. Highly recommended!",
-    name: "Michael Chen",
-    role: "Product Manager, InnovateLabs",
-    initial: "M",
   },
   {
     text: "Excellent communication and coding skills. Made our complex requirements look easy to implement.",
-    name: "Emily Rodriguez",
-    role: "CTO, StartupHub",
-    initial: "E",
   },
 ];
 
