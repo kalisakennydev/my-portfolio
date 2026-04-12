@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImg from "@/assets/profile.jpg";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -33,9 +34,12 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Button asChild className="hidden md:inline-flex rounded-full">
-          <a href="mailto:kalisakenny@gmail.com">Hire Me</a>
-        </Button>
+        <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
+          <Button asChild className="rounded-full">
+            <a href="mailto:kalisakenny@gmail.com">Hire Me</a>
+          </Button>
+        </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
           {open ? <X size={24} /> : <Menu size={24} />}
