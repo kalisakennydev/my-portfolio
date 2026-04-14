@@ -4,16 +4,16 @@ import { Button } from "@/components/ui/button";
 import profileImg from "@/assets/profile.jpg";
 
 const stats = [
-  { value: "8+", label: "Years Experience" },
-  { value: "50+", label: "Projects Done" },
-  { value: "30+", label: "Happy Clients" },
+  { value: "5+", label: "Years Experience" },
+  { value: "25+", label: "Projects Done" },
+  { value: "10+", label: "Technologies" },
 ];
 
 const HeroSection = () => (
-  <section id="home" className="section-padding pt-32 md:pt-36">
-    <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+  <section id="home" className="section-padding pt-28 md:pt-32 lg:pt-36">
+    <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-        <div className="flex items-center gap-2 mb-6">
+        <div className="flex items-center gap-2 mb-5">
           <span className="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
             Open to Work
           </span>
@@ -23,17 +23,17 @@ const HeroSection = () => (
           </span>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6">
-          Crafting{" "}
-          <span className="text-primary">Digital</span>{" "}
-          Experiences
+        <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold leading-[1.08] tracking-tight mb-5">
+          Transforming{" "}
+          <span className="text-primary block">Ideas Into</span>{" "}
+          Real Products
         </h1>
 
-        <p className="text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">
+        <p className="text-base sm:text-lg text-muted-foreground max-w-lg mb-7 leading-relaxed">
           I transform ideas into elegant, high-performance web applications. Specialized in React, Next.js, and modern JavaScript ecosystems.
         </p>
 
-        <div className="flex flex-wrap gap-3 mb-12">
+        <div className="flex flex-wrap gap-3 mb-10">
           <Button asChild size="lg" className="rounded-full gap-2">
             <a href="#contact"><MessageCircle size={18} /> Let's Talk</a>
           </Button>
@@ -45,11 +45,11 @@ const HeroSection = () => (
           </Button>
         </div>
 
-        <div className="flex gap-12">
+        <div className="flex gap-10 sm:gap-12 border-t pt-6 border-border">
           {stats.map((s) => (
             <div key={s.label}>
-              <p className="text-3xl font-heading font-extrabold">{s.value}</p>
-              <p className="text-sm text-muted-foreground">{s.label}</p>
+              <p className="text-2xl sm:text-3xl font-heading font-extrabold">{s.value}</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">{s.label}</p>
             </div>
           ))}
         </div>
@@ -59,12 +59,12 @@ const HeroSection = () => (
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="relative hidden lg:block"
+        className="relative hidden lg:flex justify-end"
       >
-        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px] group">
+        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px] w-full max-w-[440px] group">
           <img src={profileImg} alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         </div>
-        <div className="absolute bottom-6 right-[-20px] bg-card rounded-xl shadow-lg px-4 py-3 flex items-center gap-3 border">
+        <div className="absolute bottom-6 right-[-10px] bg-card rounded-xl shadow-lg px-4 py-3 flex items-center gap-3 border">
           <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
             <Zap className="text-primary" size={20} />
           </span>
