@@ -23,12 +23,12 @@ const Navbar = () => {
         </a>
 
         {/* Always-visible nav links (scrollable on small screens) */}
-        <div className="flex items-center gap-3 sm:gap-5 md:gap-7 lg:gap-8 overflow-x-auto no-scrollbar flex-1 justify-center min-w-0">
+        <div className="flex items-center gap-2.5 sm:gap-5 md:gap-7 lg:gap-8 overflow-x-auto no-scrollbar flex-1 justify-start sm:justify-center min-w-0 px-1">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
+              className="text-[11px] sm:text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap shrink-0"
             >
               {l.label}
             </a>
